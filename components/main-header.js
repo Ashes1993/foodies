@@ -4,6 +4,7 @@ import Link from "next/link";
 import classes from "./main-header.module.css";
 import Image from "next/image";
 import MainHeaderBackground from "./main-header-background";
+import NavLinks from "./nav-links";
 
 const MainHeader = () => {
   return (
@@ -17,8 +18,8 @@ const MainHeader = () => {
         <nav className={classes.nav}>
           <ul>
             <li>
-              <Link href="/meals">Browse Meals</Link>
-              <Link href="/community">Foodies Community</Link>
+              <NavLinks href="/meals">Browse Meals</NavLinks>
+              <NavLinks href="/community">Foodies Community</NavLinks>
             </li>
           </ul>
         </nav>
